@@ -3,7 +3,9 @@
 {{#each items}}
 {{> UI.dynamic template=../template data=this}}
 {{else}}
-<div>no results</div>
+<div class="alert alert-info" role="alert">
+  <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;no results
+</div>
 {{/each}}
 </div>
 </template>

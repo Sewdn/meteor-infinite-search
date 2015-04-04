@@ -4,12 +4,13 @@
     <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
     <input type="text" class="form-control" placeholder="type to search" aria-describedby="sizing-addon1">
   </div>
+  <br/>
   {{> masonryGrid template='brick' items=results}}
 </div>
 <div class='fixed'>
   {{#if loading}}
   <div class="loading alert alert-info" role="alert">
-    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+    <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
     loading ({{{pageState}}})
   </div>
   {{/if}}

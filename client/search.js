@@ -16,7 +16,7 @@ Template.search.onCreated(function(){
         page = Session.get('page');
     if(!!lastQuery){
       Search.search(lastQuery, {
-        skip: page,
+        skip: page*size,
         limit: size
       });
     }

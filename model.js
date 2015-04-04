@@ -1,0 +1,1 @@
+Content = new Mongo.Collection('content');

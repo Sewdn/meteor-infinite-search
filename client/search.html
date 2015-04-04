@@ -1,0 +1,24 @@
+<template name="search">
+<div class="search">
+  {{> masonryGrid template='brick' items=results}}
+</div>
+<div class='fixed'>
+  {{#if loading}}
+  <div class="loading alert alert-info" role="alert">
+    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+    loading&hellip;
+  </div>
+  {{/if}}
+</div>
+</template>
+
+<template name="brick">
+<div class="brick panel panel-default">
+   <div class="panel-heading">
+    <h3 class="panel-title">{{title}}</h3>
+  </div>
+  <div class="panel-body">
+    {{content}}
+  </div>
+</div>
+</template>

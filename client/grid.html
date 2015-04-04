@@ -1,0 +1,7 @@
+<template name="masonryGrid">
+<div class='masonry'>
+{{#each items}}
+{{> UI.dynamic template=../template data=this}}
+{{/each}}
+</div>
+</template>

@@ -1,0 +1,1707 @@
+// THIS FILE IS GENERATED, DO NOT MODIFY IT!
+// It includes the bootstrap modules configured in custom.bootstrap.json.
+// You may need to use 'meteor add less' if the styles are not loaded.
+
+// If it throws errors your bootstrap.import.less is probably invalid.
+// To fix that remove that file and then recover your changes.
+
+@import "custom.bootstrap.import.less";
+@icon-font-path: "/packages/nemo64_bootstrap-data/bootstrap/fonts/";
+
+
+// @import "bootstrap/less/normalize.less"
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+//
+// 1. Set default font family to sans-serif.
+// 2. Prevent iOS text size adjust after orientation change, without disabling
+//    user zoom.
+//
+
+html {
+  font-family: sans-serif; // 1
+  -ms-text-size-adjust: 100%; // 2
+  -webkit-text-size-adjust: 100%; // 2
+}
+
+//
+// Remove default margin.
+//
+
+body {
+  margin: 0;
+}
+
+// HTML5 display definitions
+// ==========================================================================
+
+//
+// Correct `block` display not defined for any HTML5 element in IE 8/9.
+// Correct `block` display not defined for `details` or `summary` in IE 10/11
+// and Firefox.
+// Correct `block` display not defined for `main` in IE 11.
+//
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+//
+// 1. Correct `inline-block` display not defined in IE 8/9.
+// 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+//
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; // 1
+  vertical-align: baseline; // 2
+}
+
+//
+// Prevent modern browsers from displaying `audio` without controls.
+// Remove excess height in iOS 5 devices.
+//
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+//
+// Address `[hidden]` styling not present in IE 8/9/10.
+// Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+//
+
+[hidden],
+template {
+  display: none;
+}
+
+// Links
+// ==========================================================================
+
+//
+// Remove the gray background color from active links in IE 10.
+//
+
+a {
+  background-color: transparent;
+}
+
+//
+// Improve readability when focused and also mouse hovered in all browsers.
+//
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+// Text-level semantics
+// ==========================================================================
+
+//
+// Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+//
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+//
+// Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+//
+
+b,
+strong {
+  font-weight: bold;
+}
+
+//
+// Address styling not present in Safari and Chrome.
+//
+
+dfn {
+  font-style: italic;
+}
+
+//
+// Address variable `h1` font-size and margin within `section` and `article`
+// contexts in Firefox 4+, Safari, and Chrome.
+//
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+//
+// Address styling not present in IE 8/9.
+//
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+//
+// Address inconsistent and variable font size in all browsers.
+//
+
+small {
+  font-size: 80%;
+}
+
+//
+// Prevent `sub` and `sup` affecting `line-height` in all browsers.
+//
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+// Embedded content
+// ==========================================================================
+
+//
+// Remove border when inside `a` element in IE 8/9/10.
+//
+
+img {
+  border: 0;
+}
+
+//
+// Correct overflow not hidden in IE 9/10/11.
+//
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+// Grouping content
+// ==========================================================================
+
+//
+// Address margin not present in IE 8/9 and Safari.
+//
+
+figure {
+  margin: 1em 40px;
+}
+
+//
+// Address differences between Firefox and other browsers.
+//
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+//
+// Contain overflow in all browsers.
+//
+
+pre {
+  overflow: auto;
+}
+
+//
+// Address odd `em`-unit font size rendering in all browsers.
+//
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+// Forms
+// ==========================================================================
+
+//
+// Known limitation: by default, Chrome and Safari on OS X allow very limited
+// styling of `select`, unless a `border` property is set.
+//
+
+//
+// 1. Correct color not being inherited.
+//    Known issue: affects color of disabled elements.
+// 2. Correct font properties not being inherited.
+// 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+//
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; // 1
+  font: inherit; // 2
+  margin: 0; // 3
+}
+
+//
+// Address `overflow` set to `hidden` in IE 8/9/10/11.
+//
+
+button {
+  overflow: visible;
+}
+
+//
+// Address inconsistent `text-transform` inheritance for `button` and `select`.
+// All other form control elements do not inherit `text-transform` values.
+// Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+// Correct `select` style inheritance in Firefox.
+//
+
+button,
+select {
+  text-transform: none;
+}
+
+//
+// 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+//    and `video` controls.
+// 2. Correct inability to style clickable `input` types in iOS.
+// 3. Improve usability and consistency of cursor style between image-type
+//    `input` and others.
+//
+
+button,
+html input[type="button"], // 1
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; // 2
+  cursor: pointer; // 3
+}
+
+//
+// Re-set default cursor for disabled elements.
+//
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+//
+// Remove inner padding and border in Firefox 4+.
+//
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+//
+// Address Firefox 4+ setting `line-height` on `input` using `!important` in
+// the UA stylesheet.
+//
+
+input {
+  line-height: normal;
+}
+
+//
+// It's recommended that you don't attempt to style these elements.
+// Firefox's implementation doesn't respect box-sizing, padding, or width.
+//
+// 1. Address box sizing set to `content-box` in IE 8/9/10.
+// 2. Remove excess padding in IE 8/9/10.
+//
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; // 1
+  padding: 0; // 2
+}
+
+//
+// Fix the cursor style for Chrome's increment/decrement buttons. For certain
+// `font-size` values of the `input`, it causes the cursor style of the
+// decrement button to change from `default` to `text`.
+//
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+//
+// 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+// 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+//    (include `-moz` to future-proof).
+//
+
+input[type="search"] {
+  -webkit-appearance: textfield; // 1
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; // 2
+  box-sizing: content-box;
+}
+
+//
+// Remove inner padding and search cancel button in Safari and Chrome on OS X.
+// Safari (but not Chrome) clips the cancel button when the search input has
+// padding (and `textfield` appearance).
+//
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+//
+// Define consistent border, margin, and padding.
+//
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+//
+// 1. Correct `color` not being inherited in IE 8/9/10/11.
+// 2. Remove padding so people aren't caught out if they zero out fieldsets.
+//
+
+legend {
+  border: 0; // 1
+  padding: 0; // 2
+}
+
+//
+// Remove default vertical scrollbar in IE 8/9/10/11.
+//
+
+textarea {
+  overflow: auto;
+}
+
+//
+// Don't inherit the `font-weight` (applied by a rule above).
+// NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+//
+
+optgroup {
+  font-weight: bold;
+}
+
+// Tables
+// ==========================================================================
+
+//
+// Remove most spacing between table cells.
+//
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+
+
+// @import "bootstrap/less/scaffolding.less"
+//
+// Scaffolding
+// --------------------------------------------------
+
+
+// Reset the box-sizing
+//
+// Heads up! This reset may cause conflicts with some third-party widgets.
+// For recommendations on resolving such conflicts, see
+// http://getbootstrap.com/getting-started/#third-box-sizing
+* {
+  .box-sizing(border-box);
+}
+*:before,
+*:after {
+  .box-sizing(border-box);
+}
+
+
+// Body reset
+
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+  color: @text-color;
+  background-color: @body-bg;
+}
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+
+// Links
+
+a {
+  color: @link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: @link-hover-color;
+    text-decoration: @link-hover-decoration;
+  }
+
+  &:focus {
+    .tab-focus();
+  }
+}
+
+
+// Figures
+//
+// We reset this here because previously Normalize had no `figure` margins. This
+// ensures we don't break anyone's use of the element.
+
+figure {
+  margin: 0;
+}
+
+
+// Images
+
+img {
+  vertical-align: middle;
+}
+
+// Responsive images (ensure images don't scale beyond their parents)
+.img-responsive {
+  .img-responsive();
+}
+
+// Rounded corners
+.img-rounded {
+  border-radius: @border-radius-large;
+}
+
+// Image thumbnails
+//
+// Heads up! This is mixin-ed into thumbnails.less for `.thumbnail`.
+.img-thumbnail {
+  padding: @thumbnail-padding;
+  line-height: @line-height-base;
+  background-color: @thumbnail-bg;
+  border: 1px solid @thumbnail-border;
+  border-radius: @thumbnail-border-radius;
+  .transition(all .2s ease-in-out);
+
+  // Keep them at most 100% wide
+  .img-responsive(inline-block);
+}
+
+// Perfect circle
+.img-circle {
+  border-radius: 50%; // set radius in percents
+}
+
+
+// Horizontal rules
+
+hr {
+  margin-top:    @line-height-computed;
+  margin-bottom: @line-height-computed;
+  border: 0;
+  border-top: 1px solid @hr-border;
+}
+
+
+// Only display content to screen readers
+//
+// See: http://a11yproject.com/posts/how-to-hide-content/
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+// Use in conjunction with .sr-only to only display content when it's focused.
+// Useful for "Skip to main content" links; see http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1
+// Credit: HTML5 Boilerplate
+
+.sr-only-focusable {
+  &:active,
+  &:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+  }
+}
+
+
+// iOS "clickable elements" fix for role="button"
+//
+// Fixes "clickability" issue (and more generally, the firing of events such as focus as well)
+// for traditionally non-focusable elements with role="button"
+// see https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile
+// Upstream patch for normalize.css submitted: https://github.com/necolas/normalize.css/pull/379 - remove this fix once that is merged
+
+[role="button"] {
+  cursor: pointer;
+}
+
+
+// @import "bootstrap/less/type.less"
+//
+// Typography
+// --------------------------------------------------
+
+
+// Headings
+// -------------------------
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: @headings-font-family;
+  font-weight: @headings-font-weight;
+  line-height: @headings-line-height;
+  color: @headings-color;
+
+  small,
+  .small {
+    font-weight: normal;
+    line-height: 1;
+    color: @headings-small-color;
+  }
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  margin-top: @line-height-computed;
+  margin-bottom: (@line-height-computed / 2);
+
+  small,
+  .small {
+    font-size: 65%;
+  }
+}
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: (@line-height-computed / 2);
+  margin-bottom: (@line-height-computed / 2);
+
+  small,
+  .small {
+    font-size: 75%;
+  }
+}
+
+h1, .h1 { font-size: @font-size-h1; }
+h2, .h2 { font-size: @font-size-h2; }
+h3, .h3 { font-size: @font-size-h3; }
+h4, .h4 { font-size: @font-size-h4; }
+h5, .h5 { font-size: @font-size-h5; }
+h6, .h6 { font-size: @font-size-h6; }
+
+
+// Body text
+// -------------------------
+
+p {
+  margin: 0 0 (@line-height-computed / 2);
+}
+
+.lead {
+  margin-bottom: @line-height-computed;
+  font-size: floor((@font-size-base * 1.15));
+  font-weight: 300;
+  line-height: 1.4;
+
+  @media (min-width: @screen-sm-min) {
+    font-size: (@font-size-base * 1.5);
+  }
+}
+
+
+// Emphasis & misc
+// -------------------------
+
+// Ex: (12px small font / 14px base font) * 100% = about 85%
+small,
+.small {
+  font-size: floor((100% * @font-size-small / @font-size-base));
+}
+
+mark,
+.mark {
+  background-color: @state-warning-bg;
+  padding: .2em;
+}
+
+// Alignment
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify; }
+.text-nowrap         { white-space: nowrap; }
+
+// Transformation
+.text-lowercase      { text-transform: lowercase; }
+.text-uppercase      { text-transform: uppercase; }
+.text-capitalize     { text-transform: capitalize; }
+
+// Contextual colors
+.text-muted {
+  color: @text-muted;
+}
+.text-primary {
+  .text-emphasis-variant(@brand-primary);
+}
+.text-success {
+  .text-emphasis-variant(@state-success-text);
+}
+.text-info {
+  .text-emphasis-variant(@state-info-text);
+}
+.text-warning {
+  .text-emphasis-variant(@state-warning-text);
+}
+.text-danger {
+  .text-emphasis-variant(@state-danger-text);
+}
+
+// Contextual backgrounds
+// For now we'll leave these alongside the text classes until v4 when we can
+// safely shift things around (per SemVer rules).
+.bg-primary {
+  // Given the contrast here, this is the only class to have its color inverted
+  // automatically.
+  color: #fff;
+  .bg-variant(@brand-primary);
+}
+.bg-success {
+  .bg-variant(@state-success-bg);
+}
+.bg-info {
+  .bg-variant(@state-info-bg);
+}
+.bg-warning {
+  .bg-variant(@state-warning-bg);
+}
+.bg-danger {
+  .bg-variant(@state-danger-bg);
+}
+
+
+// Page header
+// -------------------------
+
+.page-header {
+  padding-bottom: ((@line-height-computed / 2) - 1);
+  margin: (@line-height-computed * 2) 0 @line-height-computed;
+  border-bottom: 1px solid @page-header-border-color;
+}
+
+
+// Lists
+// -------------------------
+
+// Unordered and Ordered lists
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: (@line-height-computed / 2);
+  ul,
+  ol {
+    margin-bottom: 0;
+  }
+}
+
+// List options
+
+// Unstyled keeps list items block level, just removes default browser padding and list-style
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+// Inline turns list items into inline-block
+.list-inline {
+  .list-unstyled();
+  margin-left: -5px;
+
+  > li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+// Description Lists
+dl {
+  margin-top: 0; // Remove browser default
+  margin-bottom: @line-height-computed;
+}
+dt,
+dd {
+  line-height: @line-height-base;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-left: 0; // Undo browser default
+}
+
+// Horizontal description lists
+//
+// Defaults to being stacked without any of the below styles applied, until the
+// grid breakpoint is reached (default of ~768px).
+
+.dl-horizontal {
+  dd {
+    &:extend(.clearfix all); // Clear the floated `dt` if an empty `dd` is present
+  }
+
+  @media (min-width: @grid-float-breakpoint) {
+    dt {
+      float: left;
+      width: (@dl-horizontal-offset - 20);
+      clear: left;
+      text-align: right;
+      .text-overflow();
+    }
+    dd {
+      margin-left: @dl-horizontal-offset;
+    }
+  }
+}
+
+
+// Misc
+// -------------------------
+
+// Abbreviations and acronyms
+abbr[title],
+// Add data-* attribute to help out our tooltip plugin, per https://github.com/twbs/bootstrap/issues/5257
+abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted @abbr-border-color;
+}
+.initialism {
+  font-size: 90%;
+  .text-uppercase();
+}
+
+// Blockquotes
+blockquote {
+  padding: (@line-height-computed / 2) @line-height-computed;
+  margin: 0 0 @line-height-computed;
+  font-size: @blockquote-font-size;
+  border-left: 5px solid @blockquote-border-color;
+
+  p,
+  ul,
+  ol {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // Note: Deprecated small and .small as of v3.1.0
+  // Context: https://github.com/twbs/bootstrap/issues/11660
+  footer,
+  small,
+  .small {
+    display: block;
+    font-size: 80%; // back to default font-size
+    line-height: @line-height-base;
+    color: @blockquote-small-color;
+
+    &:before {
+      content: '\2014 \00A0'; // em dash, nbsp
+    }
+  }
+}
+
+// Opposite alignment of blockquote
+//
+// Heads up: `blockquote.pull-right` has been deprecated as of v3.1.0.
+.blockquote-reverse,
+blockquote.pull-right {
+  padding-right: 15px;
+  padding-left: 0;
+  border-right: 5px solid @blockquote-border-color;
+  border-left: 0;
+  text-align: right;
+
+  // Account for citation
+  footer,
+  small,
+  .small {
+    &:before { content: ''; }
+    &:after {
+      content: '\00A0 \2014'; // nbsp, em dash
+    }
+  }
+}
+
+// Addresses
+address {
+  margin-bottom: @line-height-computed;
+  font-style: normal;
+  line-height: @line-height-base;
+}
+
+
+
+// @import "bootstrap/less/grid.less"
+//
+// Grid system
+// --------------------------------------------------
+
+
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
+.container {
+  .container-fixed();
+
+  @media (min-width: @screen-sm-min) {
+    width: @container-sm;
+  }
+  @media (min-width: @screen-md-min) {
+    width: @container-md;
+  }
+  @media (min-width: @screen-lg-min) {
+    width: @container-lg;
+  }
+}
+
+
+// Fluid container
+//
+// Utilizes the mixin meant for fixed width containers, but without any defined
+// width for fluid, full width layouts.
+
+.container-fluid {
+  .container-fixed();
+}
+
+
+// Row
+//
+// Rows contain and clear the floats of your columns.
+
+.row {
+  .make-row();
+}
+
+
+// Columns
+//
+// Common styles for small and large grid columns
+
+.make-grid-columns();
+
+
+// Extra small grid
+//
+// Columns, offsets, pushes, and pulls for extra small devices like
+// smartphones.
+
+.make-grid(xs);
+
+
+// Small grid
+//
+// Columns, offsets, pushes, and pulls for the small device range, from phones
+// to tablets.
+
+@media (min-width: @screen-sm-min) {
+  .make-grid(sm);
+}
+
+
+// Medium grid
+//
+// Columns, offsets, pushes, and pulls for the desktop device range.
+
+@media (min-width: @screen-md-min) {
+  .make-grid(md);
+}
+
+
+// Large grid
+//
+// Columns, offsets, pushes, and pulls for the large desktop device range.
+
+@media (min-width: @screen-lg-min) {
+  .make-grid(lg);
+}
+
+
+
+// @import "bootstrap/less/glyphicons.less"
+//
+// Glyphicons for Bootstrap
+//
+// Since icons are fonts, they can be placed anywhere text is placed and are
+// thus automatically sized to match the surrounding child. To use, create an
+// inline element with the appropriate classes, like so:
+//
+// <a href="#"><span class="glyphicon glyphicon-star"></span> Star</a>
+
+// Import the fonts
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('@{icon-font-path}@{icon-font-name}.eot');
+  src: url('@{icon-font-path}@{icon-font-name}.eot?#iefix') format('embedded-opentype'),
+       url('@{icon-font-path}@{icon-font-name}.woff2') format('woff2'),
+       url('@{icon-font-path}@{icon-font-name}.woff') format('woff'),
+       url('@{icon-font-path}@{icon-font-name}.ttf') format('truetype'),
+       url('@{icon-font-path}@{icon-font-name}.svg#@{icon-font-svg-id}') format('svg');
+}
+
+// Catchall baseclass
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Individual icons
+.glyphicon-asterisk               { &:before { content: "\2a"; } }
+.glyphicon-plus                   { &:before { content: "\2b"; } }
+.glyphicon-euro,
+.glyphicon-eur                    { &:before { content: "\20ac"; } }
+.glyphicon-minus                  { &:before { content: "\2212"; } }
+.glyphicon-cloud                  { &:before { content: "\2601"; } }
+.glyphicon-envelope               { &:before { content: "\2709"; } }
+.glyphicon-pencil                 { &:before { content: "\270f"; } }
+.glyphicon-glass                  { &:before { content: "\e001"; } }
+.glyphicon-music                  { &:before { content: "\e002"; } }
+.glyphicon-search                 { &:before { content: "\e003"; } }
+.glyphicon-heart                  { &:before { content: "\e005"; } }
+.glyphicon-star                   { &:before { content: "\e006"; } }
+.glyphicon-star-empty             { &:before { content: "\e007"; } }
+.glyphicon-user                   { &:before { content: "\e008"; } }
+.glyphicon-film                   { &:before { content: "\e009"; } }
+.glyphicon-th-large               { &:before { content: "\e010"; } }
+.glyphicon-th                     { &:before { content: "\e011"; } }
+.glyphicon-th-list                { &:before { content: "\e012"; } }
+.glyphicon-ok                     { &:before { content: "\e013"; } }
+.glyphicon-remove                 { &:before { content: "\e014"; } }
+.glyphicon-zoom-in                { &:before { content: "\e015"; } }
+.glyphicon-zoom-out               { &:before { content: "\e016"; } }
+.glyphicon-off                    { &:before { content: "\e017"; } }
+.glyphicon-signal                 { &:before { content: "\e018"; } }
+.glyphicon-cog                    { &:before { content: "\e019"; } }
+.glyphicon-trash                  { &:before { content: "\e020"; } }
+.glyphicon-home                   { &:before { content: "\e021"; } }
+.glyphicon-file                   { &:before { content: "\e022"; } }
+.glyphicon-time                   { &:before { content: "\e023"; } }
+.glyphicon-road                   { &:before { content: "\e024"; } }
+.glyphicon-download-alt           { &:before { content: "\e025"; } }
+.glyphicon-download               { &:before { content: "\e026"; } }
+.glyphicon-upload                 { &:before { content: "\e027"; } }
+.glyphicon-inbox                  { &:before { content: "\e028"; } }
+.glyphicon-play-circle            { &:before { content: "\e029"; } }
+.glyphicon-repeat                 { &:before { content: "\e030"; } }
+.glyphicon-refresh                { &:before { content: "\e031"; } }
+.glyphicon-list-alt               { &:before { content: "\e032"; } }
+.glyphicon-lock                   { &:before { content: "\e033"; } }
+.glyphicon-flag                   { &:before { content: "\e034"; } }
+.glyphicon-headphones             { &:before { content: "\e035"; } }
+.glyphicon-volume-off             { &:before { content: "\e036"; } }
+.glyphicon-volume-down            { &:before { content: "\e037"; } }
+.glyphicon-volume-up              { &:before { content: "\e038"; } }
+.glyphicon-qrcode                 { &:before { content: "\e039"; } }
+.glyphicon-barcode                { &:before { content: "\e040"; } }
+.glyphicon-tag                    { &:before { content: "\e041"; } }
+.glyphicon-tags                   { &:before { content: "\e042"; } }
+.glyphicon-book                   { &:before { content: "\e043"; } }
+.glyphicon-bookmark               { &:before { content: "\e044"; } }
+.glyphicon-print                  { &:before { content: "\e045"; } }
+.glyphicon-camera                 { &:before { content: "\e046"; } }
+.glyphicon-font                   { &:before { content: "\e047"; } }
+.glyphicon-bold                   { &:before { content: "\e048"; } }
+.glyphicon-italic                 { &:before { content: "\e049"; } }
+.glyphicon-text-height            { &:before { content: "\e050"; } }
+.glyphicon-text-width             { &:before { content: "\e051"; } }
+.glyphicon-align-left             { &:before { content: "\e052"; } }
+.glyphicon-align-center           { &:before { content: "\e053"; } }
+.glyphicon-align-right            { &:before { content: "\e054"; } }
+.glyphicon-align-justify          { &:before { content: "\e055"; } }
+.glyphicon-list                   { &:before { content: "\e056"; } }
+.glyphicon-indent-left            { &:before { content: "\e057"; } }
+.glyphicon-indent-right           { &:before { content: "\e058"; } }
+.glyphicon-facetime-video         { &:before { content: "\e059"; } }
+.glyphicon-picture                { &:before { content: "\e060"; } }
+.glyphicon-map-marker             { &:before { content: "\e062"; } }
+.glyphicon-adjust                 { &:before { content: "\e063"; } }
+.glyphicon-tint                   { &:before { content: "\e064"; } }
+.glyphicon-edit                   { &:before { content: "\e065"; } }
+.glyphicon-share                  { &:before { content: "\e066"; } }
+.glyphicon-check                  { &:before { content: "\e067"; } }
+.glyphicon-move                   { &:before { content: "\e068"; } }
+.glyphicon-step-backward          { &:before { content: "\e069"; } }
+.glyphicon-fast-backward          { &:before { content: "\e070"; } }
+.glyphicon-backward               { &:before { content: "\e071"; } }
+.glyphicon-play                   { &:before { content: "\e072"; } }
+.glyphicon-pause                  { &:before { content: "\e073"; } }
+.glyphicon-stop                   { &:before { content: "\e074"; } }
+.glyphicon-forward                { &:before { content: "\e075"; } }
+.glyphicon-fast-forward           { &:before { content: "\e076"; } }
+.glyphicon-step-forward           { &:before { content: "\e077"; } }
+.glyphicon-eject                  { &:before { content: "\e078"; } }
+.glyphicon-chevron-left           { &:before { content: "\e079"; } }
+.glyphicon-chevron-right          { &:before { content: "\e080"; } }
+.glyphicon-plus-sign              { &:before { content: "\e081"; } }
+.glyphicon-minus-sign             { &:before { content: "\e082"; } }
+.glyphicon-remove-sign            { &:before { content: "\e083"; } }
+.glyphicon-ok-sign                { &:before { content: "\e084"; } }
+.glyphicon-question-sign          { &:before { content: "\e085"; } }
+.glyphicon-info-sign              { &:before { content: "\e086"; } }
+.glyphicon-screenshot             { &:before { content: "\e087"; } }
+.glyphicon-remove-circle          { &:before { content: "\e088"; } }
+.glyphicon-ok-circle              { &:before { content: "\e089"; } }
+.glyphicon-ban-circle             { &:before { content: "\e090"; } }
+.glyphicon-arrow-left             { &:before { content: "\e091"; } }
+.glyphicon-arrow-right            { &:before { content: "\e092"; } }
+.glyphicon-arrow-up               { &:before { content: "\e093"; } }
+.glyphicon-arrow-down             { &:before { content: "\e094"; } }
+.glyphicon-share-alt              { &:before { content: "\e095"; } }
+.glyphicon-resize-full            { &:before { content: "\e096"; } }
+.glyphicon-resize-small           { &:before { content: "\e097"; } }
+.glyphicon-exclamation-sign       { &:before { content: "\e101"; } }
+.glyphicon-gift                   { &:before { content: "\e102"; } }
+.glyphicon-leaf                   { &:before { content: "\e103"; } }
+.glyphicon-fire                   { &:before { content: "\e104"; } }
+.glyphicon-eye-open               { &:before { content: "\e105"; } }
+.glyphicon-eye-close              { &:before { content: "\e106"; } }
+.glyphicon-warning-sign           { &:before { content: "\e107"; } }
+.glyphicon-plane                  { &:before { content: "\e108"; } }
+.glyphicon-calendar               { &:before { content: "\e109"; } }
+.glyphicon-random                 { &:before { content: "\e110"; } }
+.glyphicon-comment                { &:before { content: "\e111"; } }
+.glyphicon-magnet                 { &:before { content: "\e112"; } }
+.glyphicon-chevron-up             { &:before { content: "\e113"; } }
+.glyphicon-chevron-down           { &:before { content: "\e114"; } }
+.glyphicon-retweet                { &:before { content: "\e115"; } }
+.glyphicon-shopping-cart          { &:before { content: "\e116"; } }
+.glyphicon-folder-close           { &:before { content: "\e117"; } }
+.glyphicon-folder-open            { &:before { content: "\e118"; } }
+.glyphicon-resize-vertical        { &:before { content: "\e119"; } }
+.glyphicon-resize-horizontal      { &:before { content: "\e120"; } }
+.glyphicon-hdd                    { &:before { content: "\e121"; } }
+.glyphicon-bullhorn               { &:before { content: "\e122"; } }
+.glyphicon-bell                   { &:before { content: "\e123"; } }
+.glyphicon-certificate            { &:before { content: "\e124"; } }
+.glyphicon-thumbs-up              { &:before { content: "\e125"; } }
+.glyphicon-thumbs-down            { &:before { content: "\e126"; } }
+.glyphicon-hand-right             { &:before { content: "\e127"; } }
+.glyphicon-hand-left              { &:before { content: "\e128"; } }
+.glyphicon-hand-up                { &:before { content: "\e129"; } }
+.glyphicon-hand-down              { &:before { content: "\e130"; } }
+.glyphicon-circle-arrow-right     { &:before { content: "\e131"; } }
+.glyphicon-circle-arrow-left      { &:before { content: "\e132"; } }
+.glyphicon-circle-arrow-up        { &:before { content: "\e133"; } }
+.glyphicon-circle-arrow-down      { &:before { content: "\e134"; } }
+.glyphicon-globe                  { &:before { content: "\e135"; } }
+.glyphicon-wrench                 { &:before { content: "\e136"; } }
+.glyphicon-tasks                  { &:before { content: "\e137"; } }
+.glyphicon-filter                 { &:before { content: "\e138"; } }
+.glyphicon-briefcase              { &:before { content: "\e139"; } }
+.glyphicon-fullscreen             { &:before { content: "\e140"; } }
+.glyphicon-dashboard              { &:before { content: "\e141"; } }
+.glyphicon-paperclip              { &:before { content: "\e142"; } }
+.glyphicon-heart-empty            { &:before { content: "\e143"; } }
+.glyphicon-link                   { &:before { content: "\e144"; } }
+.glyphicon-phone                  { &:before { content: "\e145"; } }
+.glyphicon-pushpin                { &:before { content: "\e146"; } }
+.glyphicon-usd                    { &:before { content: "\e148"; } }
+.glyphicon-gbp                    { &:before { content: "\e149"; } }
+.glyphicon-sort                   { &:before { content: "\e150"; } }
+.glyphicon-sort-by-alphabet       { &:before { content: "\e151"; } }
+.glyphicon-sort-by-alphabet-alt   { &:before { content: "\e152"; } }
+.glyphicon-sort-by-order          { &:before { content: "\e153"; } }
+.glyphicon-sort-by-order-alt      { &:before { content: "\e154"; } }
+.glyphicon-sort-by-attributes     { &:before { content: "\e155"; } }
+.glyphicon-sort-by-attributes-alt { &:before { content: "\e156"; } }
+.glyphicon-unchecked              { &:before { content: "\e157"; } }
+.glyphicon-expand                 { &:before { content: "\e158"; } }
+.glyphicon-collapse-down          { &:before { content: "\e159"; } }
+.glyphicon-collapse-up            { &:before { content: "\e160"; } }
+.glyphicon-log-in                 { &:before { content: "\e161"; } }
+.glyphicon-flash                  { &:before { content: "\e162"; } }
+.glyphicon-log-out                { &:before { content: "\e163"; } }
+.glyphicon-new-window             { &:before { content: "\e164"; } }
+.glyphicon-record                 { &:before { content: "\e165"; } }
+.glyphicon-save                   { &:before { content: "\e166"; } }
+.glyphicon-open                   { &:before { content: "\e167"; } }
+.glyphicon-saved                  { &:before { content: "\e168"; } }
+.glyphicon-import                 { &:before { content: "\e169"; } }
+.glyphicon-export                 { &:before { content: "\e170"; } }
+.glyphicon-send                   { &:before { content: "\e171"; } }
+.glyphicon-floppy-disk            { &:before { content: "\e172"; } }
+.glyphicon-floppy-saved           { &:before { content: "\e173"; } }
+.glyphicon-floppy-remove          { &:before { content: "\e174"; } }
+.glyphicon-floppy-save            { &:before { content: "\e175"; } }
+.glyphicon-floppy-open            { &:before { content: "\e176"; } }
+.glyphicon-credit-card            { &:before { content: "\e177"; } }
+.glyphicon-transfer               { &:before { content: "\e178"; } }
+.glyphicon-cutlery                { &:before { content: "\e179"; } }
+.glyphicon-header                 { &:before { content: "\e180"; } }
+.glyphicon-compressed             { &:before { content: "\e181"; } }
+.glyphicon-earphone               { &:before { content: "\e182"; } }
+.glyphicon-phone-alt              { &:before { content: "\e183"; } }
+.glyphicon-tower                  { &:before { content: "\e184"; } }
+.glyphicon-stats                  { &:before { content: "\e185"; } }
+.glyphicon-sd-video               { &:before { content: "\e186"; } }
+.glyphicon-hd-video               { &:before { content: "\e187"; } }
+.glyphicon-subtitles              { &:before { content: "\e188"; } }
+.glyphicon-sound-stereo           { &:before { content: "\e189"; } }
+.glyphicon-sound-dolby            { &:before { content: "\e190"; } }
+.glyphicon-sound-5-1              { &:before { content: "\e191"; } }
+.glyphicon-sound-6-1              { &:before { content: "\e192"; } }
+.glyphicon-sound-7-1              { &:before { content: "\e193"; } }
+.glyphicon-copyright-mark         { &:before { content: "\e194"; } }
+.glyphicon-registration-mark      { &:before { content: "\e195"; } }
+.glyphicon-cloud-download         { &:before { content: "\e197"; } }
+.glyphicon-cloud-upload           { &:before { content: "\e198"; } }
+.glyphicon-tree-conifer           { &:before { content: "\e199"; } }
+.glyphicon-tree-deciduous         { &:before { content: "\e200"; } }
+.glyphicon-cd                     { &:before { content: "\e201"; } }
+.glyphicon-save-file              { &:before { content: "\e202"; } }
+.glyphicon-open-file              { &:before { content: "\e203"; } }
+.glyphicon-level-up               { &:before { content: "\e204"; } }
+.glyphicon-copy                   { &:before { content: "\e205"; } }
+.glyphicon-paste                  { &:before { content: "\e206"; } }
+// The following 2 Glyphicons are omitted for the time being because
+// they currently use Unicode codepoints that are outside the
+// Basic Multilingual Plane (BMP). Older buggy versions of WebKit can't handle
+// non-BMP codepoints in CSS string escapes, and thus can't display these two icons.
+// Notably, the bug affects some older versions of the Android Browser.
+// More info: https://github.com/twbs/bootstrap/issues/10106
+// .glyphicon-door                   { &:before { content: "\1f6aa"; } }
+// .glyphicon-key                    { &:before { content: "\1f511"; } }
+.glyphicon-alert                  { &:before { content: "\e209"; } }
+.glyphicon-equalizer              { &:before { content: "\e210"; } }
+.glyphicon-king                   { &:before { content: "\e211"; } }
+.glyphicon-queen                  { &:before { content: "\e212"; } }
+.glyphicon-pawn                   { &:before { content: "\e213"; } }
+.glyphicon-bishop                 { &:before { content: "\e214"; } }
+.glyphicon-knight                 { &:before { content: "\e215"; } }
+.glyphicon-baby-formula           { &:before { content: "\e216"; } }
+.glyphicon-tent                   { &:before { content: "\26fa"; } }
+.glyphicon-blackboard             { &:before { content: "\e218"; } }
+.glyphicon-bed                    { &:before { content: "\e219"; } }
+.glyphicon-apple                  { &:before { content: "\f8ff"; } }
+.glyphicon-erase                  { &:before { content: "\e221"; } }
+.glyphicon-hourglass              { &:before { content: "\231b"; } }
+.glyphicon-lamp                   { &:before { content: "\e223"; } }
+.glyphicon-duplicate              { &:before { content: "\e224"; } }
+.glyphicon-piggy-bank             { &:before { content: "\e225"; } }
+.glyphicon-scissors               { &:before { content: "\e226"; } }
+.glyphicon-bitcoin                { &:before { content: "\e227"; } }
+.glyphicon-btc                    { &:before { content: "\e227"; } }
+.glyphicon-xbt                    { &:before { content: "\e227"; } }
+.glyphicon-yen                    { &:before { content: "\00a5"; } }
+.glyphicon-jpy                    { &:before { content: "\00a5"; } }
+.glyphicon-ruble                  { &:before { content: "\20bd"; } }
+.glyphicon-rub                    { &:before { content: "\20bd"; } }
+.glyphicon-scale                  { &:before { content: "\e230"; } }
+.glyphicon-ice-lolly              { &:before { content: "\e231"; } }
+.glyphicon-ice-lolly-tasted       { &:before { content: "\e232"; } }
+.glyphicon-education              { &:before { content: "\e233"; } }
+.glyphicon-option-horizontal      { &:before { content: "\e234"; } }
+.glyphicon-option-vertical        { &:before { content: "\e235"; } }
+.glyphicon-menu-hamburger         { &:before { content: "\e236"; } }
+.glyphicon-modal-window           { &:before { content: "\e237"; } }
+.glyphicon-oil                    { &:before { content: "\e238"; } }
+.glyphicon-grain                  { &:before { content: "\e239"; } }
+.glyphicon-sunglasses             { &:before { content: "\e240"; } }
+.glyphicon-text-size              { &:before { content: "\e241"; } }
+.glyphicon-text-color             { &:before { content: "\e242"; } }
+.glyphicon-text-background        { &:before { content: "\e243"; } }
+.glyphicon-object-align-top       { &:before { content: "\e244"; } }
+.glyphicon-object-align-bottom    { &:before { content: "\e245"; } }
+.glyphicon-object-align-horizontal{ &:before { content: "\e246"; } }
+.glyphicon-object-align-left      { &:before { content: "\e247"; } }
+.glyphicon-object-align-vertical  { &:before { content: "\e248"; } }
+.glyphicon-object-align-right     { &:before { content: "\e249"; } }
+.glyphicon-triangle-right         { &:before { content: "\e250"; } }
+.glyphicon-triangle-left          { &:before { content: "\e251"; } }
+.glyphicon-triangle-bottom        { &:before { content: "\e252"; } }
+.glyphicon-triangle-top           { &:before { content: "\e253"; } }
+.glyphicon-console                { &:before { content: "\e254"; } }
+.glyphicon-superscript            { &:before { content: "\e255"; } }
+.glyphicon-subscript              { &:before { content: "\e256"; } }
+.glyphicon-menu-left              { &:before { content: "\e257"; } }
+.glyphicon-menu-right             { &:before { content: "\e258"; } }
+.glyphicon-menu-down              { &:before { content: "\e259"; } }
+.glyphicon-menu-up                { &:before { content: "\e260"; } }
+
+
+
+// @import "bootstrap/less/jumbotron.less"
+//
+// Jumbotron
+// --------------------------------------------------
+
+
+.jumbotron {
+  padding: @jumbotron-padding (@jumbotron-padding / 2);
+  margin-bottom: @jumbotron-padding;
+  color: @jumbotron-color;
+  background-color: @jumbotron-bg;
+
+  h1,
+  .h1 {
+    color: @jumbotron-heading-color;
+  }
+
+  p {
+    margin-bottom: (@jumbotron-padding / 2);
+    font-size: @jumbotron-font-size;
+    font-weight: 200;
+  }
+
+  > hr {
+    border-top-color: darken(@jumbotron-bg, 10%);
+  }
+
+  .container &,
+  .container-fluid & {
+    border-radius: @border-radius-large; // Only round corners at higher resolutions if contained in a container
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  @media screen and (min-width: @screen-sm-min) {
+    padding: (@jumbotron-padding * 1.6) 0;
+
+    .container &,
+    .container-fluid & {
+      padding-left:  (@jumbotron-padding * 2);
+      padding-right: (@jumbotron-padding * 2);
+    }
+
+    h1,
+    .h1 {
+      font-size: (@font-size-base * 4.5);
+    }
+  }
+}
+
+
+
+// @import "bootstrap/less/alerts.less"
+//
+// Alerts
+// --------------------------------------------------
+
+
+// Base styles
+// -------------------------
+
+.alert {
+  padding: @alert-padding;
+  margin-bottom: @line-height-computed;
+  border: 1px solid transparent;
+  border-radius: @alert-border-radius;
+
+  // Headings for larger alerts
+  h4 {
+    margin-top: 0;
+    // Specified for the h4 to prevent conflicts of changing @headings-color
+    color: inherit;
+  }
+
+  // Provide class for links that match alerts
+  .alert-link {
+    font-weight: @alert-link-font-weight;
+  }
+
+  // Improve alignment and spacing of inner content
+  > p,
+  > ul {
+    margin-bottom: 0;
+  }
+
+  > p + p {
+    margin-top: 5px;
+  }
+}
+
+// Dismissible alerts
+//
+// Expand the right padding and account for the close button's positioning.
+
+.alert-dismissable, // The misspelled .alert-dismissable was deprecated in 3.2.0.
+.alert-dismissible {
+  padding-right: (@alert-padding + 20);
+
+  // Adjust close link position
+  .close {
+    position: relative;
+    top: -2px;
+    right: -21px;
+    color: inherit;
+  }
+}
+
+// Alternate styles
+//
+// Generate contextual modifier classes for colorizing the alert.
+
+.alert-success {
+  .alert-variant(@alert-success-bg; @alert-success-border; @alert-success-text);
+}
+
+.alert-info {
+  .alert-variant(@alert-info-bg; @alert-info-border; @alert-info-text);
+}
+
+.alert-warning {
+  .alert-variant(@alert-warning-bg; @alert-warning-border; @alert-warning-text);
+}
+
+.alert-danger {
+  .alert-variant(@alert-danger-bg; @alert-danger-border; @alert-danger-text);
+}
+
+
+
+// @import "bootstrap/less/panels.less"
+//
+// Panels
+// --------------------------------------------------
+
+
+// Base class
+.panel {
+  margin-bottom: @line-height-computed;
+  background-color: @panel-bg;
+  border: 1px solid transparent;
+  border-radius: @panel-border-radius;
+  .box-shadow(0 1px 1px rgba(0,0,0,.05));
+}
+
+// Panel contents
+.panel-body {
+  padding: @panel-body-padding;
+  &:extend(.clearfix all);
+}
+
+// Optional heading
+.panel-heading {
+  padding: @panel-heading-padding;
+  border-bottom: 1px solid transparent;
+  .border-top-radius((@panel-border-radius - 1));
+
+  > .dropdown .dropdown-toggle {
+    color: inherit;
+  }
+}
+
+// Within heading, strip any `h*` tag of its default margins for spacing.
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: ceil((@font-size-base * 1.125));
+  color: inherit;
+
+  > a,
+  > small,
+  > .small,
+  > small > a,
+  > .small > a {
+    color: inherit;
+  }
+}
+
+// Optional footer (stays gray in every modifier class)
+.panel-footer {
+  padding: @panel-footer-padding;
+  background-color: @panel-footer-bg;
+  border-top: 1px solid @panel-inner-border;
+  .border-bottom-radius((@panel-border-radius - 1));
+}
+
+
+// List groups in panels
+//
+// By default, space out list group content from panel headings to account for
+// any kind of custom content between the two.
+
+.panel {
+  > .list-group,
+  > .panel-collapse > .list-group {
+    margin-bottom: 0;
+
+    .list-group-item {
+      border-width: 1px 0;
+      border-radius: 0;
+    }
+
+    // Add border top radius for first one
+    &:first-child {
+      .list-group-item:first-child {
+        border-top: 0;
+        .border-top-radius((@panel-border-radius - 1));
+      }
+    }
+    // Add border bottom radius for last one
+    &:last-child {
+      .list-group-item:last-child {
+        border-bottom: 0;
+        .border-bottom-radius((@panel-border-radius - 1));
+      }
+    }
+  }
+}
+// Collapse space between when there's no additional content.
+.panel-heading + .list-group {
+  .list-group-item:first-child {
+    border-top-width: 0;
+  }
+}
+.list-group + .panel-footer {
+  border-top-width: 0;
+}
+
+// Tables in panels
+//
+// Place a non-bordered `.table` within a panel (not within a `.panel-body`) and
+// watch it go full width.
+
+.panel {
+  > .table,
+  > .table-responsive > .table,
+  > .panel-collapse > .table {
+    margin-bottom: 0;
+
+    caption {
+      padding-left: @panel-body-padding;
+      padding-right: @panel-body-padding;
+    }
+  }
+  // Add border top radius for first one
+  > .table:first-child,
+  > .table-responsive:first-child > .table:first-child {
+    .border-top-radius((@panel-border-radius - 1));
+
+    > thead:first-child,
+    > tbody:first-child {
+      > tr:first-child {
+        border-top-left-radius: (@panel-border-radius - 1);
+        border-top-right-radius: (@panel-border-radius - 1);
+
+        td:first-child,
+        th:first-child {
+          border-top-left-radius: (@panel-border-radius - 1);
+        }
+        td:last-child,
+        th:last-child {
+          border-top-right-radius: (@panel-border-radius - 1);
+        }
+      }
+    }
+  }
+  // Add border bottom radius for last one
+  > .table:last-child,
+  > .table-responsive:last-child > .table:last-child {
+    .border-bottom-radius((@panel-border-radius - 1));
+
+    > tbody:last-child,
+    > tfoot:last-child {
+      > tr:last-child {
+        border-bottom-left-radius: (@panel-border-radius - 1);
+        border-bottom-right-radius: (@panel-border-radius - 1);
+
+        td:first-child,
+        th:first-child {
+          border-bottom-left-radius: (@panel-border-radius - 1);
+        }
+        td:last-child,
+        th:last-child {
+          border-bottom-right-radius: (@panel-border-radius - 1);
+        }
+      }
+    }
+  }
+  > .panel-body + .table,
+  > .panel-body + .table-responsive,
+  > .table + .panel-body,
+  > .table-responsive + .panel-body {
+    border-top: 1px solid @table-border-color;
+  }
+  > .table > tbody:first-child > tr:first-child th,
+  > .table > tbody:first-child > tr:first-child td {
+    border-top: 0;
+  }
+  > .table-bordered,
+  > .table-responsive > .table-bordered {
+    border: 0;
+    > thead,
+    > tbody,
+    > tfoot {
+      > tr {
+        > th:first-child,
+        > td:first-child {
+          border-left: 0;
+        }
+        > th:last-child,
+        > td:last-child {
+          border-right: 0;
+        }
+      }
+    }
+    > thead,
+    > tbody {
+      > tr:first-child {
+        > td,
+        > th {
+          border-bottom: 0;
+        }
+      }
+    }
+    > tbody,
+    > tfoot {
+      > tr:last-child {
+        > td,
+        > th {
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+  > .table-responsive {
+    border: 0;
+    margin-bottom: 0;
+  }
+}
+
+
+// Collapsable panels (aka, accordion)
+//
+// Wrap a series of panels in `.panel-group` to turn them into an accordion with
+// the help of our collapse JavaScript plugin.
+
+.panel-group {
+  margin-bottom: @line-height-computed;
+
+  // Tighten up margin so it's only between panels
+  .panel {
+    margin-bottom: 0;
+    border-radius: @panel-border-radius;
+
+    + .panel {
+      margin-top: 5px;
+    }
+  }
+
+  .panel-heading {
+    border-bottom: 0;
+
+    + .panel-collapse > .panel-body,
+    + .panel-collapse > .list-group {
+      border-top: 1px solid @panel-inner-border;
+    }
+  }
+
+  .panel-footer {
+    border-top: 0;
+    + .panel-collapse .panel-body {
+      border-bottom: 1px solid @panel-inner-border;
+    }
+  }
+}
+
+
+// Contextual variations
+.panel-default {
+  .panel-variant(@panel-default-border; @panel-default-text; @panel-default-heading-bg; @panel-default-border);
+}
+.panel-primary {
+  .panel-variant(@panel-primary-border; @panel-primary-text; @panel-primary-heading-bg; @panel-primary-border);
+}
+.panel-success {
+  .panel-variant(@panel-success-border; @panel-success-text; @panel-success-heading-bg; @panel-success-border);
+}
+.panel-info {
+  .panel-variant(@panel-info-border; @panel-info-text; @panel-info-heading-bg; @panel-info-border);
+}
+.panel-warning {
+  .panel-variant(@panel-warning-border; @panel-warning-text; @panel-warning-heading-bg; @panel-warning-border);
+}
+.panel-danger {
+  .panel-variant(@panel-danger-border; @panel-danger-text; @panel-danger-heading-bg; @panel-danger-border);
+}

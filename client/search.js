@@ -1,46 +1,63 @@
+var lastQuery = "";
+
 Session.setDefault('pageSize', 6);
 Session.setDefault('page', 0);
 Session.setDefault('loading', true);
 
-Template.search.onRendered(function(){
+Search = new SearchSource('search', ['title', 'content'], {
+  keepHistory: 1000 * 60 * 5,
+  localSearch: true
+});
+
+Template.search.onCreated(function(){
   var self = this;
-  self.lastNode._uihooks = {
-    insertElement: function(node, next) {
-      $(node).css('opacity', 0)
-             .insertBefore(next)
-             .velocity({
-        opacity:[1,0]
-      }, {
-        easing: 'easeOutQuad',
-        duration: 200,
-        queue: false
-      });
-    },
-    removeElement: function (node) {
-      $(node).velocity({
-        opacity:[0, 1]
-      }, {
-        easing: 'easeOutQuad',
-        duration: 200,
-        queue: false,
-        complete: function(){
-          $(node).remove();
-        }
+  self.autorun(function(){
+    var size = Session.get('pageSize'),
+        page = Session.get('page');
+    if(!!lastQuery){
+      Search.search(lastQuery, {
+        skip: page,
+        limit: size
       });
     }
-  };
+  });
 });
 
 Template.search.helpers({
   'results': function(){
-    var size = Session.get('pageSize'),
-        page = Session.get('page');
-    return Content.find({}, {skip:page*size, limit:size});
+    var size, page;
+    Tracker.nonreactive(function(){
+      size = Session.get('pageSize');
+      page = Session.get('page');
+    });
+
+    return Search.store.find({}, {limit:(page+1)*size});
   },
   'loading': function(){
-    return Session.get('loading');
+    var state = Search.getStatus();
+    return !!state.loading;
   }
 });
 
+Template.search.events({
+  "keyup input": _.throttle(function(e, t) {
+    var query = $(e.target).val().trim();
+    if(query && query.length > 2){
+      if(query !== lastQuery){
+        Session.set('page', 0);
+        var size = Session.get('pageSize');
+        lastQuery = query;
 
-Meteor.subscribe('allContent');
+        console.log(query);
+        Search.search(query, {
+          skip: 0,
+          limit: size
+        });
+      }
+    } else {
+      //clear result
+      lastQuery = query;
+      Search.store.remove({});
+    }
+  }, 500)
+});

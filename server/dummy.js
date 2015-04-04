@@ -3,21 +3,16 @@ Meteor.startup(function(){
   var content = Content.findOne({});
   if(!content){
     var flavours = [
-      'classic',
-      'cicero_1_10_32',
-      'cicero_1_10_33',
+      'latin',
       'jabberwocky'
     ];
     _.each(_.range(100), function(i){
-      dimsum.configure({ flavor: flavours(i%4) });
+      dimsum.configure({ flavor: flavours[i%flavours.length] });
       Content.insert({
-        title: dimsum.sentence(),
-        content: dimsum()
+        title: dimsum.sentence(1),
+        content: dimsum(),
+        created: new Date()
       });
     });
   }
-});
-
-Meteor.publish('allContent', function(){
-  return Content.find({});
 });

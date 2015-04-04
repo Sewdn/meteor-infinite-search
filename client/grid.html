@@ -2,6 +2,8 @@
 <div class='masonry'>
 {{#each items}}
 {{> UI.dynamic template=../template data=this}}
+{{else}}
+<div>no results</div>
 {{/each}}
 </div>
 </template>

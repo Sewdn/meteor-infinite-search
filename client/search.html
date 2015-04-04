@@ -1,10 +1,19 @@
 <template name="search">
-<div class="search">
-  <div class="input-group input-group-lg">
-    <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
-    <input type="text" class="form-control" placeholder="type to search" aria-describedby="sizing-addon1">
+<div class="jumbotron">
+  <div class='inner-container'>
+    <div class='meteor'></div>
+    <h1>Infinite Search Example</h1>
+    <br/>
+    <div class="input-group input-group-lg">
+      <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
+      <input type="text" class="form-control" placeholder="type to search" aria-describedby="sizing-addon1">
+    </div>
   </div>
-  <br/>
+  <div class='inner-container credentials'>
+  built by <a href="https://twitter.com/Sewdn" target="_blank">@Sewdn</a>
+  </div>
+</div>
+<div class="inner-container search">
   {{> masonryGrid template='brick' items=results}}
 </div>
 <div class='fixed'>
@@ -20,10 +29,10 @@
 <template name="brick">
 <div class="brick panel panel-default">
    <div class="panel-heading">
-    <h3 class="panel-title">{{title}}</h3>
+    <h3 class="panel-title">{{{title}}}</h3>
   </div>
   <div class="panel-body">
-    {{content}}
+    {{{content}}}
   </div>
 </div>
 </template>

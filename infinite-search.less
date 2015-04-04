@@ -1,14 +1,84 @@
 /* CSS declarations go here */
-.search {
-  width:90%;
-  max-width: 1300px;
+body{
+  background: -webkit-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%); /* W3C */
+  font-family:'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight:300;
+}
+.right .github-fork-ribbon {
+  background-color: #f80;
+}
+.no-result {
+  margin: 48px 0px;
+  font-size:48px;
+  text-align:center;
+  width:100%;
+  .small{
+    font-size:0.5em;
+  }
+}
+.meteor{
+  background-image: url("https://d14jjfgstdxsoz.cloudfront.net/meteor-logo.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 150px;
+  height: 36px;
   margin-left:auto;
   margin-right:auto;
+}
+input[type="text"]:focus {   
+  border-color: rgba(255,255,255, 1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255,255,255, 0.6);
+  outline: 0 none;
+}
+.inner-container{
+  width:90%;
+  max-width: 1090px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.jumbotron{
+  h1{
+    font-weight:300;
+    font-family:'Open Sans', Helvetica, Arial, sans-serif;
+  }
+  a {color: white;}
+ 
+  background: -webkit-linear-gradient(90deg, #DD5E89 10%, #F7BB97 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #DD5E89 10%, #F7BB97 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #DD5E89 10%, #F7BB97 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #DD5E89 10%, #F7BB97 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #DD5E89 10%, #F7BB97 90%); /* W3C */
+             
+  color: white;
+  text-align: center;
+  padding:0px;
+  padding-top:72px;
+  .inner-container {
+    height:100%;
+    width:80%;
+    max-width: 820px;
+  }
+  .credentials {
+    padding: 20px 0px;
+    margin-top:72px;
+  }
+}
+
+.search {
+
   .brick {
     width: 350px;
     -webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.2);
     box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.2);
+    em {
+      background-color: #ffd700;
+    }
   }
 }
 .fixed {

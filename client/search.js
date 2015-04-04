@@ -31,7 +31,12 @@ Template.search.helpers({
       page = Session.get('page');
     });
 
-    return Search.store.find({}, {limit:(page+1)*size});
+    return Search.getData({
+      transform: function(matchText, regExp) {
+        return matchText.replace(regExp, "<em>$&</em>");
+      },
+      limit:(page+1)*size
+    }, true);
   },
   'loading': function(){
     var state = Search.getStatus();
@@ -48,7 +53,6 @@ Template.search.events({
         var size = Session.get('pageSize');
         lastQuery = query;
 
-        console.log(query);
         Search.search(query, {
           skip: 0,
           limit: size

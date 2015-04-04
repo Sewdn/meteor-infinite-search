@@ -47,7 +47,7 @@ Template.search.helpers({
 Template.search.events({
   "keyup input": _.throttle(function(e, t) {
     var query = $(e.target).val().trim();
-    if(query && query.length > 2){
+    if(query && query.length > 0){
       if(query !== lastQuery){
         Session.set('page', 0);
         var size = Session.get('pageSize');
